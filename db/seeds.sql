@@ -3,11 +3,11 @@ VALUES
     ('Engineering'),
     ('Marketing'),
     ('Sales'),
-    ('Human Resources')
-    ('Accounting')
+    ('Human Resources'),
+    ('Accounting'),
     ('Legal');
 
-INSERT INTO role (title, salary, department_id)
+INSERT INTO roles (title, salary, department_id)
 VALUES
     ('Software Engineer', 85000, 1),
     ('Data Engineer', 85000, 1),
@@ -38,12 +38,15 @@ VALUES
     ('Samantha', 'Jones', 7, NULL),
     ('Nicholas', 'Frye', 8, 7),
     ('Ashley', 'Greene', 9, 7),
-    ('Christoper', 'Jensen', 10, NULL),
+    ('Christopher', 'Jensen', 10, NULL),
     ('Madison', 'Reed', 11, 10),
     ('Tyler', 'Durden', 12, 10),
     ('Taylor', 'Jones', 13, 14),
     ('Andrew', 'Garfield', 14, NULL),
     ('Jessica', 'Rabbit', 15, NULL),
     ('Daniel', 'Thompson', 16, 15),
-    ('Victoria', 'Lane', 17, 15);
+    ('Victoria', 'Lane', 17, 15),
+    ('Ryan', 'Gosling', 1, 3),
+    ('Emma', 'Watson', 16, 15),
+    ('Jonathan', 'Krimsier', 2, 1);
 
