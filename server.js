@@ -67,7 +67,7 @@ const inputPrompts = () => {
 
 // Function to view all departments
 const viewDepartments = () => {
-    const sql = `SELECT departemnt.id AS id, department.name AS name FROM department`;
+    const sql = `SELECT department.id AS department_id, department.name AS department_name FROM department`;
     connection.query(sql, (err, sql) => {
         if (err) {
             console.log(err);
