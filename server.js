@@ -121,7 +121,7 @@ const addDepartment = () => {
             }
         }
     ])
-        .then(answers => {
+        .then(answer => {
             const sql = `INSERT INTO department (name) VALUES (?)`;
             connection.query(sql, answer.departmentName, (err, res) => {
                 if (err) {
@@ -237,7 +237,7 @@ const addEmployee = () => {
         .then(answers => {
             const parameters = [answers.firstName, answers.lastName];
 
-            // Take the role titles and use they as choices for the user to select
+            // Take the role titles and use them as choices for the user to select
             const roleVar = `SELECT roles.id, roles.title FROM roles`;
             connection.query(roleVar, (err, data) => {
                 if (err) {
@@ -259,8 +259,8 @@ const addEmployee = () => {
                         const job = roleChoicesChoice.roleChoices;
                         parameters.push(job);
 
-                        // Take the manager names and use them as choices for the user to select
-                        const managerSql = `SELECT * FROM employee`;
+                        // Take the employees in manager positions (employees who's manager_id is NULL) and use them as choices for the user to select
+                        const managerSql = `SELECT * FROM employee WHERE manager_id IS NULL`;
                         connection.query(managerSql, (err, data) => {
                             if (err) {
                                 console.log(err);
