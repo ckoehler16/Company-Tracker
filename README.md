@@ -22,9 +22,9 @@ As a developer I wanted to create a command-line application from scratch that w
 - Next clone the Company-Tracker repository to your local computer.
 - Then while in the root directory run 'npm init -y' in the command-line terminal to ensure your package.json
 - Make sure in your package.json file that it says '"main": "server.js"' and that under "scripts" it says "start": "node server.js"
-- Next in the command-line's root directory run 'npm i inquirer mysql2 express console.table dotenv' to make sure all the necessary node packages are installed (I recommend installing the dotenv and creating the .env file to protect you MySQL information being public).
+- Next in the command-line's root directory run 'npm i inquirer mysql2 express console.table dotenv' to make sure all the necessary node packages are installed (I recommend installing the dotenv and creating the .env file to protect your MySQL information becoming public).
 - Then in the root directory command-line run 'mysql -u root -p' and follow the prompts to be logged into MySQL.
-- Next run 'source db/schema.sql' followed by 'source db/seeds.sql' to clear out any existing database, create a new one, and populate the tables with existing information.
+- Next in mysql run 'source db/schema.sql' followed by 'source db/seeds.sql' to clear out any existing database, create a new one, and populate the tables with existing information.
 - Then back in your root directory's command-line run 'npm start' and follow the prompts.
 
 
