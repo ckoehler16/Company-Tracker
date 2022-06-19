@@ -1,7 +1,7 @@
 {
   "name": "company-tracker",
   "version": "1.0.0",
-  "description": "",
+  "description": "![badge](https://img.shields.io/badge/License-MIT-success.svg)",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
