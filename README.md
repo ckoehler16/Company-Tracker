@@ -31,7 +31,7 @@ As a developer I wanted to create a command-line application from scratch that w
 ## Usage
 
 Click on the link below for a tutorial on how to run the application.
-- [Tutorial]()
+- [Tutorial](https://drive.google.com/file/d/1B8TYoMHdQ_9s_4WTRY8r6FfyIsn-44Ls/view)
 
 
 ## License
